@@ -1,0 +1,11 @@
+﻿@inherits ViewPage<CountRange>
+
+Start: @Model.StartNumber 
+ 
+End: @Model.EndNumber
+ 
+ 
+@for (int i = Model.StartNumber; i <= Model.EndNumber; i++)
+{
+    <p>@i</p>
+}

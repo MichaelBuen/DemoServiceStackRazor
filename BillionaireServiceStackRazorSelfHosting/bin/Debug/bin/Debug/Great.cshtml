@@ -1,0 +1,38 @@
+﻿@inherits ViewPage<CountRange>
+
+<html ng-app>
+
+<script type="text/javascript" src='/js/angular.min.js'></script>
+
+<script>
+	sample();
+
+	function Yo($scope) {
+		$scope.message = 'heheh ok na';
+	}
+	
+	alert('ok');
+	
+</script>
+
+<body ng-controller='Yo'>
+
+<script>
+	alert('galeng');
+</script>
+
+xxx
+
+{{message}}
+
+Start: @Model.StartNumber <br />
+End: @Model.EndNumber
+
+
+@for (int i = Model.StartNumber; i <= Model.EndNumber; i++)
+{
+    <p>@i</p>
+}
+
+</body>
+</html>

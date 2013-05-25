@@ -1,0 +1,49 @@
+
+<html ng-app='theApp'>
+	<head>
+        <script type="text/javascript" src='/js/angular.min.js'></script>
+        <script type="text/javascript" src="/App/app.js"></script>
+
+
+		<title></title>
+	</head>
+	<body ng-controller='Yo'>
+
+
+    Super duper productivity
+
+    {{answer() * 4}}
+
+    <input type="button" ng-click='say("Naman")' value="hei"/>
+
+
+    <input type="button" ng-click='TheWindow.alert(what())' value="heix"/>
+
+    <table>
+        <thead>
+        <tr>
+            <td>Name</td><td>Agexyz</td>
+        </tr>
+        </thead>
+        <tbody >
+        <tr ng-repeat="p in persons">
+            <td style="border-width: 1; border-style: solid">{{p.Name}}</td>
+            <td style="border-width: 1; border-style: solid">{{p.Age}}</td>
+        </tr>
+        </tbody>
+        <tfooter>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+        </tfooter>
+    </table>
+
+
+        Super galeng mag-code<br/>
+
+    i love to code, this is great. nice, galeng. Very very good
+
+
+	</body>
+</html>
